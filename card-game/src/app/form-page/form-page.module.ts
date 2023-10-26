@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormPageComponent } from './form-page.component';
 import { ConnexionFormComponent } from '../connexion-form/connexion-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CreationFormModule } from '../creation-form/creation-form.module';
+import { CreationFormComponent } from '../creation-form/creation-form.component';
 
 
 
@@ -11,12 +11,12 @@ import { CreationFormModule } from '../creation-form/creation-form.module';
   declarations: [
     FormPageComponent,
     ConnexionFormComponent,
+    CreationFormComponent,
   ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    CreationFormModule
   ]
 })
 export class FormPageModule { }

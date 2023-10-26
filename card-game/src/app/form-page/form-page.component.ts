@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./form-page.component.css']
 })
 export class FormPageComponent {
+  accountCreated!:boolean;
+
+  onClick(hasAccount:boolean){
+    if(!hasAccount){
+      this.accountCreated = false;
+      console.log('no');
+    }else{
+      this.accountCreated = true;
+      console.log('yes');
+    }
+  }
 
 }

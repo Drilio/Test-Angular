@@ -8,17 +8,17 @@ import { FormDataService } from '../form-data.service';
 })
 export class ConnexionFormComponent {
   form: FormGroup = new FormGroup({
-    name: new FormControl(''),
+    login: new FormControl(''),
     password: new FormControl('')
   })
 
   constructor(private formDataService: FormDataService){}
 
   onSubmit() {
-    const name = this.form.get('name')?.value;
+    const login = this.form.get('login')?.value;
     const password = this.form.get('password')?.value;
-    this.formDataService.setFormData(name, password);
-    console.log(name, password);
+    this.formDataService.setFormData(login, password);
+    console.log(login, password);
     this.formDataService.getLog();
   }
 }
