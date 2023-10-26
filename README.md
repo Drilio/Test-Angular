@@ -1,4 +1,4 @@
-# MyDigitalSchool-CardGame
+# CardGame
 Apprendre un Framework JS : Angular (B3 Developeur Web)
 
 ## Introduction
